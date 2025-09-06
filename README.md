@@ -30,7 +30,7 @@ UI Design: Responsive and user-friendly
 📸 Output Screenshots
 
 💰 Salary Breakdown
-![Screenshot 2025-08-22 121247](https://github.com/Anushkaaa29/Salaryfy.io/blob/main/Screenshot%202025-09-06%20141506.png)
+![Screenshot 2025-08-22 121247](https://github.com/Anushkaaa29/Salaryfy.io/blob/main/Screenshot%202025-09-06%20143347.png)
  
 🧾 Tax Information
 ![Screenshot 2025-08-22 121247](https://github.com/Anushkaaa29/Salaryfy.io/blob/main/Screenshot%202025-09-06%20143405.png)
