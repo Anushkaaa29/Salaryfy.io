@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salaryfy.io</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papb7k8fE0+s0ruUcPSvbc6Paa8Xh6mk5Kcq14fDTdTN2NoV44TbQKV1A3sdFyly0rnmQLPruQZZc+3JRv7ffg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- AOS CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+  <header>
+    <div class="container" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+      <div>
+        <h1>Salaryfy.io</h1>
+        <div class="subtitle">Clarity • Transparency • Financial Literacy</div>
+      </div>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#salary-breakdown" tabindex="0"><i class="fa-solid fa-wallet"></i> Salary Breakdown</a></li>
+          <li><a href="#tax-info" tabindex="0"><i class="fa-solid fa-file-invoice-dollar"></i> Tax Info</a></li>
+          <li><a href="#financial-education" tabindex="0"><i class="fa-solid fa-graduation-cap"></i> Financial Education</a></li>
+          <li><a href="#salary-calculator" tabindex="0"><i class="fa-solid fa-calculator"></i> Calculator</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Salary Breakdown Section -->
+    <section id="salary-breakdown" class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" tabindex="-1">
+      <h2>Salary Breakdown</h2>
+      <div class="card card-text" aria-label="Explanation of Salary Components">
+        <p>
+          Understanding your salary is key to managing your finances effectively. Here are the main components:
+        </p>
+        <ul>
+          <li><strong>Basic Pay:</strong> The core salary amount before any additions or deductions.</li>
+          <li><strong>House Rent Allowance (HRA):</strong> Portion of your salary given to cover accommodation costs.</li>
+          <li><strong>Allowances:</strong> Other benefits like conveyance, medical, special allowances, etc.</li>
+          <li><strong>Provident Fund (PF):</strong> A retirement savings fund deducted monthly.</li>
+          <li><strong>Tax:</strong> Income tax deducted based on your salary.</li>
+        </ul>
+      </div>
+      <div class="card chart-container" aria-label="Doughnut chart visualizing salary breakdown">
+        <canvas id="salaryDoughnutChart" role="img" aria-describedby="chart-desc-salary"></canvas>
+        <p id="chart-desc-salary" class="sr-only">
+          Doughnut chart showing salary distribution: Basic Pay 50%, HRA 20%, Allowances 15%, PF 10%, Tax 5%.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tax Info Section -->
+    <section id="tax-info" class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" tabindex="-1">
+      <h2>Tax Info</h2>
+      <div class="cards-container" role="list">
+        <article class="tax-card" role="listitem" tabindex="0" aria-label="Tax Slabs">
+          <h3><i class="fa-solid fa-layer-group"></i> Tax Slabs</h3>
+          <ul>
+            <li>Income up to ₹2.5 lakh: No tax</li>
+            <li>₹2.5 lakh - ₹5 lakh: 5%</li>
+            <li>₹5 lakh - ₹10 lakh: 20%</li>
+            <li>Above ₹10 lakh: 30%</li>
+          </ul>
+        </article>
+
+        <article class="tax-card" role="listitem" tabindex="0" aria-label="Deductions">
+          <h3><i class="fa-solid fa-file-invoice"></i> Deductions</h3>
+          <ul>
+            <li>Section 80C: Up to ₹1.5 lakh (Investments, PPF, ELSS)</li>
+            <li>Standard Deduction: ₹50,000</li>
+            <li>Health Insurance under 80D</li>
+            <li>Home Loan Interest under 24(b)</li>
+          </ul>
+        </article>
+
+        <article class="tax-card" role="listitem" tabindex="0" aria-label="Tax Saving Options">
+          <h3><i class="fa-solid fa-piggy-bank"></i> Tax-Saving Options</h3>
+          <ul>
+            <li>Invest in PPF, ELSS, NSC</li>
+            <li>Use House Rent Allowance (HRA) exemption</li>
+            <li>Utilize Health and Education loan benefits</li>
+            <li>Claim deductions on insurance premiums</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Financial Education Section -->
+    <section id="financial-education" class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" tabindex="-1">
+      <h2>Financial Education</h2>
+      <div class="edu-card" aria-label="Financial education tips">
+        <ul>
+          <li><strong>Budgeting:</strong> Track income & expenses to control cash flow effectively.</li>
+          <li><strong>Emergency Fund:</strong> Save at least 3-6 months of expenses for unexpected events.</li>
+          <li><strong>Compounding:</strong> Let your investments grow by reinvesting earnings over time.</li>
+          <li><strong>Investments:</strong> Diversify between stocks, bonds, mutual funds, and real estate for growth and security.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Salary Calculator Section -->
+    <section
+      id="salary-calculator"
+      class="container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+      tabindex="-1"
+      aria-label="Salary Calculator"
+    >
+      <h2>Salary Calculator</h2>
+      <div class="calc-card">
+        <label for="monthly-salary">Enter Monthly Salary</label>
+        <input
+          type="number"
+          id="monthly-salary"
+          min="0"
+          placeholder="e.g. 50000"
+          aria-describedby="salaryInputHelp"
+        />
+        <div id="salaryInputHelp" class="sr-only">Enter your gross monthly salary amount in numbers.</div>
+        <button id="calculate-btn" aria-live="polite" aria-label="Calculate salary breakdown">Calculate</button>
+
+        <div class="result" id="calc-result" aria-live="polite" aria-atomic="true"></div>
+        <div class="chart-container">
+          <canvas id="salaryBarChart" role="img" aria-describedby="chart-desc-calc"></canvas>
+          <p id="chart-desc-calc" class="sr-only">Bar chart showing Gross Salary, HRA, PF, Tax, and Net Salary values.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Salaryfy.io | Empowering You Financially</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

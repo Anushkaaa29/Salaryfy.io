@@ -1,0 +1,327 @@
+
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      color: #1a202c;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    ul {
+      padding-left: 1.2em;
+      margin: 0;
+    }
+    h2 {
+      margin-top: 0;
+      color: #2d3748;
+    }
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Header */
+    header {
+      background-color: #2b6cb0;
+      color: white;
+      padding: 1rem 0.8rem;
+      box-shadow: 0 3px 6px rgba(43,108,176,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    header .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+    header .subtitle {
+      font-weight: 300;
+      font-style: italic;
+      font-size: 0.9rem;
+      opacity: 0.85;
+      margin-top: 0.15rem;
+      user-select: none;
+      letter-spacing: 0.05em;
+    }
+    nav {
+      margin-top: 0.6rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      font-weight: 600;
+      color: white;
+      padding: 0.4rem 0.6rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 1rem;
+      user-select: none;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: #1e40af;
+      transform: scale(1.05);
+      outline: none;
+    }
+
+    /* Sections */
+    section {
+      margin: 3rem 0 6rem 0;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      text-align: center;
+      position: relative;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    section h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #2b6cb0;
+      margin: 8px auto 0 auto;
+      border-radius: 2px;
+    }
+
+    /* Cards */
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(50,50,93,0.1);
+      padding: 1.8rem 2rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 10px 25px rgba(50,50,93,0.15);
+    }
+
+    /* Salary Breakdown Content */
+    #salary-breakdown .card-text {
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      font-size: 1.05rem;
+      user-select: none;
+      color: #2d3748;
+      line-height: 1.5;
+    }
+    #salary-breakdown .chart-container {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    /* Tax Info Cards */
+    #tax-info .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      justify-content: center;
+    }
+    #tax-info .tax-card {
+      flex: 1 1 280px;
+      background-color: #e6f0ff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(43,108,176,0.12);
+      padding: 1.6rem 1.8rem;
+      color: #1e40af;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    #tax-info .tax-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(43,108,176,0.22);
+    }
+    #tax-info .tax-card ul {
+      font-weight: 400;
+      margin-top: 0.8rem;
+    }
+    #tax-info .tax-card li {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    /* Financial Education Section */
+    #financial-education .edu-card {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem 2.4rem;
+      box-shadow: 0 6px 20px rgba(34,34,34,0.08);
+      font-weight: 500;
+      color: #2d3748;
+      line-height: 1.6;
+    }
+    #financial-education .edu-card ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    #financial-education .edu-card ul li {
+      padding-left: 2.4rem;
+      position: relative;
+      margin-bottom: 1.1rem;
+      font-size: 1.1rem;
+    }
+    #financial-education .edu-card ul li::before {
+      content: "\f110"; /* FontAwesome chevron-right */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #2b6cb0;
+      font-size: 1.1rem;
+    }
+
+    /* Salary Calculator Section */
+    #salary-calculator .calc-card {
+      max-width: 480px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 22px rgba(43,108,176,0.1);
+      padding: 2rem 2.4rem;
+      text-align: center;
+    }
+    #salary-calculator label {
+      font-weight: 600;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 0.8rem;
+      color: #2d3748;
+      user-select: none;
+    }
+    #salary-calculator input[type="number"] {
+      width: 100%;
+      padding: 0.6rem 1rem;
+      border: 2px solid #cbd5e0;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      margin-bottom: 1.4rem;
+      transition: border-color 0.3s ease;
+    }
+    #salary-calculator input[type="number"]:focus {
+      outline: none;
+      border-color: #2b6cb0;
+      box-shadow: 0 0 8px rgba(43,108,176,0.25);
+    }
+    #salary-calculator button {
+      background-color: #2b6cb0;
+      border: none;
+      color: white;
+      padding: 0.75rem 1.8rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: pointer;
+      letter-spacing: 0.03em;
+      box-shadow: 0 5px 12px rgba(43,108,176,0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      user-select: none;
+    }
+    #salary-calculator button:hover,
+    #salary-calculator button:focus {
+      background-color: #1e40af;
+      transform: translateY(-2.5px);
+      outline: none;
+    }
+    #salary-calculator .result {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      color: #2d3748;
+      user-select: text;
+    }
+    #salary-calculator .result p {
+      margin: 0.5rem 0;
+      font-weight: 600;
+    }
+    #salary-calculator .chart-container {
+      margin-top: 2.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2b6cb0;
+      color: white;
+      text-align: center;
+      padding: 1rem 1rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      user-select: none;
+      box-shadow: 0 -3px 6px rgba(43,108,176,0.2);
+    }
+
+    /* Responsive */
+
+    @media (max-width: 767px) {
+      header .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        width: 100%;
+      }
+      nav ul {
+        justify-content: flex-start;
+        gap: 0.9rem;
+        flex-wrap: wrap;
+      }
+      header h1 {
+        font-size: 1.6rem;
+      }
+      header .subtitle {
+        font-size: 0.85rem;
+      }
+      #tax-info .cards-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+      }
+      #financial-education .edu-card {
+        padding: 1.6rem 1.8rem;
+      }
+      #salary-calculator .calc-card {
+        padding: 1.6rem 2rem;
+      }
+    }
+
+    /* Accessibility: show focus outline only for keyboard users */
+    .user-is-tabbing button:focus,
+    .user-is-tabbing input:focus,
+    .user-is-tabbing a:focus,
+    .user-is-tabbing .tax-card:focus,
+    .user-is-tabbing nav ul li a:focus {
+      outline: 3px solid #2b6cb0;
+      outline-offset: 3px;
+    }
