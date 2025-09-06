@@ -13,7 +13,7 @@ The brand stands for clarity, transparency, and financial literacy.
 
 📚 Financial education section
 
-🔢 Optional calculators/tools (frontend only)
+🔢 Calculators/tools 
 
 🎨 Professional, informative, and user-centric UI
 
@@ -21,7 +21,7 @@ The brand stands for clarity, transparency, and financial literacy.
 
 🛠️ Tech Stack
 
-Frontend: HTML, CSS, JavaScript (or any framework you used)
+Frontend: HTML, CSS, JavaScript 
 
 UI Design: Responsive and user-friendly
 
@@ -30,13 +30,17 @@ UI Design: Responsive and user-friendly
 📸 Output Screenshots
 
 💰 Salary Breakdown
-![Screenshot 2025-08-22 121247]()
+![Screenshot 2025-08-22 121247](https://github.com/Anushkaaa29/Salaryfy.io/blob/main/Screenshot%202025-09-06%20141506.png)
  
 🧾 Tax Information
-![Screenshot 2025-08-22 121247]()
+![Screenshot 2025-08-22 121247](https://github.com/Anushkaaa29/Salaryfy.io/blob/main/Screenshot%202025-09-06%20143405.png)
 
 📚 Financial Education
-![Screenshot 2025-08-22 121247]()
+![Screenshot 2025-08-22 121247](https://github.com/Anushkaaa29/Salaryfy.io/blob/main/Screenshot%202025-09-06%20143445.png)
 
 🧮 Salary Calculator 
-![Screenshot 2025-08-22 121247]()
+![Screenshot 2025-08-22 121247](https://github.com/Anushkaaa29/Salaryfy.io/blob/main/Screenshot%202025-09-06%20143519.png)
+
+For Salary 20,00,000
+![Screenshot 2025-08-22 121247](https://github.com/Anushkaaa29/Salaryfy.io/blob/main/Screenshot%202025-09-06%20141506.png)
+ 
