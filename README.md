@@ -1,0 +1,1 @@
+# Salaryfy.io
